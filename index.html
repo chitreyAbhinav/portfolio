@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhinav Chitrey | Cybersecurity, Ethical Hacking &amp; Python Developer</title>
+<meta name="description" content="Personal portfolio and engineering showcase of Abhinav Chitrey, 3rd Year B.E. Computer Science and Engineering student at Chandigarh University, specializing in Cybersecurity, Ethical Hacking, and Python.">
+<meta name="theme-color" content="#05060f">
+<meta property="og:title" content="Abhinav Chitrey | Cybersecurity, Ethical Hacking &amp; Python Developer">
+<meta property="og:description" content="Analyze. Defend. Secure. Engineering a safer digital world.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/abhinav-avatar-clean-square.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/images/abhinav-avatar-clean-square.jpg">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Structured SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abhinav Chitrey",
+  "jobTitle": "Cybersecurity & Software Engineering Student",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Chandigarh University"
+  },
+  "url": "https://github.com/chitreyAbhinav",
+  "sameAs": [
+    "https://www.linkedin.com/in/abhinav-chitrey/",
+    "https://github.com/chitreyAbhinav"
+  ],
+  "knowsAbout": ["Cybersecurity", "Ethical Hacking", "Python", "Java", "Network Security", "Cryptography"]
+}
+</script>
+
+<noscript><style>.tall{height:auto}.sticky{position:static;height:auto;display:block;padding:3rem 0}.beat{position:static;opacity:1;visibility:visible;margin:1.5rem 0}.pic,.dots,.ring,.fl{display:none}.kicker{position:static;transform:none;display:inline-block}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="intro-ov" aria-hidden="true"><span>ABHINAV</span></div>
+<canvas id="bgc" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="cur" aria-hidden="true"></div>
+<i class="sp" id="sp" aria-hidden="true"></i>
+
+<header class="nav glass" id="nav">
+  <a href="#home" class="logo">ABHINAV</a>
+  <nav id="menu" class="menu" aria-label="Main">
+    <a href="#home" class="on">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#future">Future</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="recruiter-pill" id="rm-toggle" type="button" title="View quick recruiter summary">⚡ Recruiter Mode</button>
+    <button class="icon-btn" id="snd-btn" type="button" aria-label="Toggle audio effects" title="Audio FX: Off">🔇</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<button class="term-fab" id="term-btn" type="button" title="Open Interactive Cyber Shell (or press ~)">
+  <span class="fab-dot"></span>&gt;_ Terminal [~]
+</button>
+
+<main id="main">
+<section id="home" class="hero">
+  <p class="label" data-sp=".2">PERSONAL PORTFOLIO</p>
+  <div class="name" aria-hidden="true" data-sp=".35">ABHINAV</div>
+  <div class="pw" data-sp="-.1">
+    <div class="portrait glass" data-tilt data-c="45,115,220|34,211,238|10,24,50">
+      <span class="ph" aria-hidden="true">A</span>
+      <img src="assets/images/abhinav-hero.webp" alt="Abhinav Chitrey smiling outdoors in a denim jacket" width="600" height="800" fetchpriority="high" onerror="this.remove()">
+    </div>
+    <div class="name2" aria-hidden="true" data-sp="-.06">CHITREY</div>
+  </div>
+  <div class="htext" data-sp=".12">
+    <h1>Hi, I'm <b>Abhinav Chitrey</b></h1>
+    <p class="sub">3rd Year B.E. CSE • Cybersecurity &amp; Privacy • Python Developer</p>
+    <div class="hero-contact-bar glass">
+      <a class="hcb-item" href="mailto:chitreyabhinav2006@gmail.com?subject=Hello%20Abhinav" title="Send direct email">
+        <span class="hcb-icon">✉️</span> <span>chitreyabhinav2006@gmail.com</span>
+      </a>
+      <span class="hcb-sep">•</span>
+      <a class="hcb-item" id="top-phone" href="tel:+919115758678" title="Call Abhinav">
+        <span class="hcb-icon">📞</span> <span id="top-phone-val">+91 91157 58678</span>
+      </a>
+      <span class="hcb-sep">•</span>
+      <a class="hcb-item" id="top-wa" href="https://wa.me/919532623538" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+        <span class="hcb-icon">💬</span> <span id="top-wa-val">+91 95326 23538 (WhatsApp)</span>
+      </a>
+      <span class="hcb-sep">•</span>
+      <span class="hcb-item hcb-loc" title="College: Mohali | Hometown: Prayagraj">
+        <span class="hcb-icon">📍</span> <span>Mohali (College) • Prayagraj (Home)</span>
+      </span>
+    </div>
+    <p class="lead">Undergraduate at Chandigarh University with a deep passion for ethical hacking, network defense, identifying vulnerabilities, and engineering resilient digital systems.</p>
+    <div class="cta">
+      <a class="btn pri mag" href="#about">Explore My Journey</a>
+      <button class="btn gl mag cert-trigger" type="button">🛡️ IIT Madras Topper (87%)</button>
+      <a class="btn gl mag" href="#contact">Let's Connect</a>
+    </div>
+  </div>
+  <a class="hint" href="#about" aria-label="Scroll down"><i></i></a>
+</section>
+
+<section id="about" class="tall" style="--n:7" aria-labelledby="ab">
+  <div class="sticky">
+    <h2 id="ab" class="kicker glass">Who is Abhinav?</h2>
+    <div class="beat"><b>3rd Year</b><p>B.E. Computer Science &amp; Engineering</p></div>
+    <div class="beat"><b>Student</b><p>learning, experimenting &amp; building every day</p></div>
+    <div class="beat"><b class="sm">Chandigarh University</b><p>where my engineering foundation is being built</p></div>
+    <div class="beat"><b>Cybersecurity</b><p>fascinated by system internals &amp; defensive architectures</p></div>
+    <div class="beat"><b class="sm" style="cursor:pointer" onclick="openCertModal()">Top 5% Topper ↗</b><p>IIT Madras Elite NPTEL in Cyber Security &amp; Privacy (87%)</p></div>
+    <div class="beat"><b>Ethical Hacker</b><p>finding vulnerabilities to make systems safer</p></div>
+    <div class="beat"><b>Ambitious</b><p>committed to continuous growth &amp; security excellence</p></div>
+    <figure class="pic glass " data-a="0" data-b="0" data-c="37,99,235|59,130,246|6,16,42"><img src="assets/images/abhinav-campus.webp" alt="Abhinav in campus attire with Chandigarh University lanyard" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="pic glass l" data-a="1" data-b="2" data-c="217,119,6|245,158,11|40,20,8"><img src="assets/images/abhinav-focus.webp" alt="Abhinav close-up with hoodie and university lanyard" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="pic glass " data-a="3" data-b="3" data-c="45,115,220|34,211,238|10,24,50"><img src="assets/images/abhinav-hero.webp" alt="Abhinav in denim jacket outdoors" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="pic glass l" data-a="4" data-b="4" data-c="56,170,180|214,165,92|10,36,42"><img src="assets/images/abhinav-travel.webp" alt="Abhinav at temple plaza with headphones" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="pic glass " data-a="5" data-b="5" data-c="70,110,235|225,70,80|14,18,48"><img src="assets/images/abhinav-casual.webp" alt="Abhinav casual portrait by palm trees" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <figure class="pic glass l" data-a="6" data-b="6" data-c="52,77,185|191,131,86|12,14,36"><img src="assets/images/abhinav-evening.webp" alt="Abhinav portrait in city lights" width="480" height="640" loading="lazy" decoding="async"></figure>
+    <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+<div class="wrap note"><p class="glass" data-tilt>I believe in hands-on practice, curiosity-driven problem solving, and building practical technical expertise. From scripting security tools in Python to dissecting network packets and hardening systems, I strive to turn technical insight into resilient defense.</p></div>
+
+<section id="skills" class="skills" aria-labelledby="sk">
+  <div class="wrap">
+    <h2 id="sk" class="title">My <span class="gr">Skills</span></h2>
+    <p class="intro">Hover, tap or focus a skill to explore its application.</p>
+  </div>
+  <div class="orbit" id="orbit">
+    <svg class="lines" aria-hidden="true"></svg>
+    <div class="core glass" data-tilt aria-live="polite"><h3 id="cn">Abhinav</h3><p id="cd">Nine core technical &amp; analytical strengths I sharpen daily.</p></div>
+    <button class="sk glass" style="--h:210" data-d="Core language for security automation, scripting, and rapid tooling.">Python</button>
+    <button class="sk glass" style="--h:25" data-d="Object-oriented programming, backend fundamentals, and structured software architecture.">Java</button>
+    <button class="sk glass" style="--h:160" data-d="Understanding threat models, cryptography, data privacy, and security best practices.">Cybersecurity</button>
+    <button class="sk glass" style="--h:0" data-d="Vulnerability assessment, offensive security methodologies, and penetration testing.">Ethical Hacking</button>
+    <button class="sk glass" style="--h:190" data-d="Protocols, packet analysis, firewall fundamentals, and safeguarding network traffic.">Network Security</button>
+    <button class="sk glass" style="--h:45" data-d="Proficient in Linux environments, terminal workflows, and system administration.">Linux</button>
+    <button class="sk glass" style="--h:270" data-d="Breaking complex algorithmic and system challenges into elegant, structured solutions.">Problem Solving</button>
+    <button class="sk glass" style="--h:290" data-d="Analyzing edge cases, evaluating system integrity, and root-cause debugging.">Critical Thinking</button>
+    <button class="sk glass" style="--h:130" data-d="Quickly mastering new security frameworks, adapting to dynamic challenges, and continuous learning.">Adaptability</button>
+  </div>
+</section>
+
+<!-- Interactive Projects Section -->
+<section id="projects" class="proj-sec" aria-labelledby="pr-title">
+  <div class="wrap">
+    <h2 id="pr-title" class="title">Featured <span class="gr">Projects</span></h2>
+    <p class="intro">Engineered, audited, and open-sourced on GitHub. Click <b>Simulate Execution</b> to test any tool live.</p>
+
+    <!-- Filters -->
+    <div class="proj-filters">
+      <button class="p-filter active" data-f="all">All Projects</button>
+      <button class="p-filter" data-f="sec">🛡️ Security &amp; Systems</button>
+      <button class="p-filter" data-f="py">🐍 Python &amp; Analytics</button>
+      <button class="p-filter" data-f="web">⚡ Web &amp; Algorithms</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="proj-grid">
+      <!-- Project 1: WorkforceX -->
+      <div class="p-card glass" data-cat="py">
+        <div>
+          <div class="p-head">
+            <span class="p-badge py">Python / AI</span>
+            <span class="p-year">2026 • SAS Hackathon</span>
+          </div>
+          <h3 class="p-title">WorkforceX: Intelligence &amp; Decision Platform</h3>
+          <p class="p-desc">Strategic workforce intelligence platform engineered for the SAS CU Hackathon Round-2. Implements predictive modeling for talent allocation and attrition risk analysis.</p>
+          <div class="p-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">Predictive Analytics</span>
+            <span class="p-tag">Decision Modeling</span>
+            <span class="p-tag">SAS Hackathon</span>
+          </div>
+        </div>
+        <div>
+          <div class="p-actions">
+            <button class="btn p-sim-btn mag" data-sim="workforce" type="button">▶ Run Simulation</button>
+            <a class="btn gl mag" href="https://github.com/chitreyAbhinav/workforce-intelligence" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <div class="p-term" id="term-workforce">
+            <div class="p-term-head"><span>workforce_core.py --evaluate</span><button class="p-term-close" type="button">✕</button></div>
+            <div class="p-term-body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Secure Coding Checklist -->
+      <div class="p-card glass" data-cat="sec">
+        <div>
+          <div class="p-head">
+            <span class="p-badge sec">Security / Web</span>
+            <span class="p-year">2026 • AppSec</span>
+          </div>
+          <h3 class="p-title">Secure Coding Checklist &amp; Auditor</h3>
+          <p class="p-desc">Application security auditing tool built with Flask. Automates OWASP Top 10 compliance checks, secure header verification, and input sanitation benchmarking for developers.</p>
+          <div class="p-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">Flask</span>
+            <span class="p-tag">OWASP Top 10</span>
+            <span class="p-tag">AppSec</span>
+          </div>
+        </div>
+        <div>
+          <div class="p-actions">
+            <button class="btn p-sim-btn mag" data-sim="audit" type="button">▶ Run Simulation</button>
+            <a class="btn gl mag" href="https://github.com/chitreyAbhinav/secure-coding-checklist" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <div class="p-term" id="term-audit">
+            <div class="p-term-head"><span>audit_engine.py --scan</span><button class="p-term-close" type="button">✕</button></div>
+            <div class="p-term-body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Windhawk Mods -->
+      <div class="p-card glass" data-cat="sec">
+        <div>
+          <div class="p-head">
+            <span class="p-badge sys">C++ / OS Internals</span>
+            <span class="p-year">2026 • Kernel &amp; Hooks</span>
+          </div>
+          <h3 class="p-title">Windhawk Windows System Mods</h3>
+          <p class="p-desc">Low-level Windows OS customization and telemetry mods utilizing API hooking and memory injection to augment OS window management and desktop security telemetry.</p>
+          <div class="p-tags">
+            <span class="p-tag">C++</span>
+            <span class="p-tag">Windows API</span>
+            <span class="p-tag">Memory Hooking</span>
+            <span class="p-tag">Low-Level</span>
+          </div>
+        </div>
+        <div>
+          <div class="p-actions">
+            <button class="btn p-sim-btn mag" data-sim="hook" type="button">▶ Run Simulation</button>
+            <a class="btn gl mag" href="https://github.com/chitreyAbhinav/windhawk-mods" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <div class="p-term" id="term-hook">
+            <div class="p-term-head"><span>windhawk_mod.dll [HOOK]</span><button class="p-term-close" type="button">✕</button></div>
+            <div class="p-term-body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Phone-FaceOff -->
+      <div class="p-card glass" data-cat="web">
+        <div>
+          <div class="p-head">
+            <span class="p-badge web">Algorithms / Web</span>
+            <span class="p-year">2026 • Decision Tech</span>
+          </div>
+          <h3 class="p-title">Phone-FaceOff Benchmark Engine</h3>
+          <p class="p-desc">Interactive hardware benchmarking platform featuring a multi-criteria decision algorithm weighting silicon efficiency, thermals, and price-to-performance metrics.</p>
+          <div class="p-tags">
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">Algorithm</span>
+            <span class="p-tag">Data Visualization</span>
+            <span class="p-tag">UI/UX</span>
+          </div>
+        </div>
+        <div>
+          <div class="p-actions">
+            <button class="btn p-sim-btn mag" data-sim="benchmark" type="button">▶ Run Simulation</button>
+            <a class="btn gl mag" href="https://github.com/chitreyAbhinav/Phone-FaceOff" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <div class="p-term" id="term-benchmark">
+            <div class="p-term-head"><span>benchmark_engine.js</span><button class="p-term-close" type="button">✕</button></div>
+            <div class="p-term-body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: CyberX-2077 -->
+      <div class="p-card glass" data-cat="web">
+        <div>
+          <div class="p-head">
+            <span class="p-badge web">Futuristic UI</span>
+            <span class="p-year">2026 • Frontend</span>
+          </div>
+          <h3 class="p-title">CyberX-2077 Futuristic HUD Interface</h3>
+          <p class="p-desc">Responsive cyborg-themed digital experience featuring futuristic HUD widgets, scanline overlays, neon glass telemetry, and cyberpunk design principles.</p>
+          <div class="p-tags">
+            <span class="p-tag">HTML5/CSS3</span>
+            <span class="p-tag">Cyberpunk HUD</span>
+            <span class="p-tag">Responsive Design</span>
+          </div>
+        </div>
+        <div>
+          <div class="p-actions">
+            <a class="btn gl mag" href="https://github.com/chitreyAbhinav/cyber-x-2077" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Typing Simulator Game -->
+      <div class="p-card glass" data-cat="web">
+        <div>
+          <div class="p-head">
+            <span class="p-badge web">Game Engine</span>
+            <span class="p-year">2025 • Interactive</span>
+          </div>
+          <h3 class="p-title">Interactive Typing Speed Simulator</h3>
+          <p class="p-desc">Real-time typing precision and speed simulator engineered in JavaScript with dynamic WPM metrics, latency calculations, and error-rate telemetry.</p>
+          <div class="p-tags">
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">Event Architecture</span>
+            <span class="p-tag">Telemetry</span>
+          </div>
+        </div>
+        <div>
+          <div class="p-actions">
+            <a class="btn gl mag" href="https://github.com/chitreyAbhinav/typing-simulator" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Interactive Security & Crypto Playground -->
+    <div class="crypto-card">
+      <div class="p-head">
+        <div>
+          <span class="p-badge sec">Live Browser Lab</span>
+          <h3 style="font-size:1.5rem;font-weight:600;margin-top:.4rem;color:#fff;">Interactive Security &amp; Cryptography Playground</h3>
+          <p style="color:var(--mute);font-size:.9rem;margin-top:.2rem;">Test real-time SHA-256 hashing, password entropy calculations, and Base64 encryption directly in the browser.</p>
+        </div>
+      </div>
+
+      <div class="crypto-tabs">
+        <button class="crypto-tab active" data-tab="hash">🔐 SHA-256 Cryptographic Hash</button>
+        <button class="crypto-tab" data-tab="entropy">🛡️ Password Entropy &amp; Crack Time</button>
+        <button class="crypto-tab" data-tab="b64">⚡ Base64 Cyber Encoder</button>
+      </div>
+
+      <!-- Tab 1: SHA-256 -->
+      <div class="crypto-panel active" id="cpanel-hash">
+        <input class="crypto-input" id="hash-input" type="text" placeholder="Type any plain-text string (e.g. 'CyberSecurity2026') to compute SHA-256 in real time..." value="AbhinavChitreyCyberSecurity">
+        <div class="crypto-output" id="hash-output">Computing SHA-256 digest...</div>
+      </div>
+
+      <!-- Tab 2: Password Entropy -->
+      <div class="crypto-panel" id="cpanel-entropy">
+        <input class="crypto-input" id="pwd-input" type="text" placeholder="Type a password to test bit strength and crack resistance..." value="Abhinav#Cyber2026!">
+        <div class="entropy-bar"><div class="entropy-fill" id="entropy-bar"></div></div>
+        <div class="entropy-stats">
+          <span id="entropy-bits">Entropy: 78.4 bits (Very Strong)</span>
+          <span id="entropy-time">Estimated crack time: 420 Million Years</span>
+        </div>
+      </div>
+
+      <!-- Tab 3: Base64 -->
+      <div class="crypto-panel" id="cpanel-b64">
+        <input class="crypto-input" id="b64-input" type="text" placeholder="Enter text to encode/decode..." value="Flag{Ethical_Hacker_Abhinav}">
+        <div class="crypto-output" id="b64-output">Encoded: ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="moments" class="tall mom" style="--n:6" aria-labelledby="mm"><div class="sticky"><h2 id="mm" class="kicker glass">Moments</h2><div class="track" id="track"><figure class="mc glass" data-c="217,119,6|245,158,11|40,20,8"><img src="assets/images/abhinav-focus.webp" alt="Abhinav wearing hoodie outdoors" width="480" height="640" loading="lazy" decoding="async"><figcaption>Focus • 87% Topper</figcaption></figure><figure class="mc glass" data-c="37,99,235|59,130,246|6,16,42"><img src="assets/images/abhinav-campus.webp" alt="Abhinav in college uniform with lanyard" width="480" height="640" loading="lazy" decoding="async"><figcaption>Campus • CU Mohali</figcaption></figure><figure class="mc glass" data-c="56,170,180|214,165,92|10,36,42"><img src="assets/images/abhinav-travel.webp" alt="Abhinav at temple plaza with headphones" width="480" height="640" loading="lazy" decoding="async"><figcaption>Explorer • Mindset</figcaption></figure><figure class="mc glass" data-c="234,88,12|251,191,36|42,16,8"><img src="assets/images/abhinav-dog.webp" alt="Abhinav with pet dog" width="480" height="640" loading="lazy" decoding="async"><figcaption>Grounded • Balance</figcaption></figure><figure class="mc glass" data-c="70,110,235|225,70,80|14,18,48"><img src="assets/images/abhinav-casual.webp" alt="Abhinav casual portrait by palm trees" width="480" height="640" loading="lazy" decoding="async"><figcaption>Relaxed • Casual</figcaption></figure><figure class="mc glass" data-c="52,77,185|191,131,86|12,14,36"><img src="assets/images/abhinav-evening.webp" alt="Abhinav portrait in city lights" width="480" height="640" loading="lazy" decoding="async"><figcaption>Driven • Vision</figcaption></figure><figure class="mc glass" data-c="45,115,220|34,211,238|10,24,50"><img src="assets/images/abhinav-hero.webp" alt="Abhinav portrait in denim jacket" width="480" height="640" loading="lazy" decoding="async"><figcaption>Abhinav • 2026</figcaption></figure></div></div></section>
+
+<section id="future" aria-labelledby="fg">
+  <div class="wrap fgoal">
+    <h2 id="fg" class="title">My Future <span class="gr">Goal</span></h2>
+    <blockquote class="glass">"My goal is to become a skilled cybersecurity professional, specializing in ethical hacking and penetration testing. I'm passionate about understanding how systems work, identifying vulnerabilities, and developing effective security solutions to make the digital world safer. I believe in continuous learning, practical experience, and turning curiosity into meaningful innovation."</blockquote>
+  </div>
+  <div class="tall jt" style="--n:7">
+    <div class="sticky">
+      <i class="ring" aria-hidden="true"></i>
+      <div class="beat"><b>Today</b><p>3rd Year CSE student with a strong cybersecurity foundation.</p></div>
+      <div class="beat"><b>Learn</b><p>Deepening knowledge in cryptography, networks &amp; Linux.</p></div>
+      <div class="beat"><b>Explore</b><p>Analyzing vulnerabilities &amp; offensive security techniques.</p></div>
+      <div class="beat"><b>Build</b><p>Developing automated security scripts and defensive tools.</p></div>
+      <div class="beat"><b>Experience</b><p>Engaging in practical labs, CTFs &amp; real-world problem solving.</p></div>
+      <div class="beat"><b>Grow</b><p>Adapting to the fast-evolving digital threat landscape.</p></div>
+      <div class="beat fin"><b class="gr">Achieve</b><p>Becoming an impactful Ethical Hacker &amp; Security Engineer.</p></div>
+      <figure class="pic glass " data-a="0" data-b="1" data-c="217,119,6|245,158,11|40,20,8"><img src="assets/images/abhinav-focus.webp" alt="Abhinav focused portrait" width="480" height="640" loading="lazy" decoding="async"></figure>
+      <figure class="pic glass l" data-a="2" data-b="3" data-c="37,99,235|59,130,246|6,16,42"><img src="assets/images/abhinav-campus.webp" alt="Abhinav campus portrait" width="480" height="640" loading="lazy" decoding="async"></figure>
+      <figure class="pic glass " data-a="4" data-b="4" data-c="56,170,180|214,165,92|10,36,42"><img src="assets/images/abhinav-travel.webp" alt="Abhinav travel portrait" width="480" height="640" loading="lazy" decoding="async"></figure>
+      <figure class="pic glass l" data-a="5" data-b="6" data-c="45,115,220|34,211,238|10,24,50"><img src="assets/images/abhinav-hero.webp" alt="Abhinav portrait in denim jacket" width="480" height="640" loading="lazy" decoding="async"></figure>
+      <div class="dots lab glass"><span>Today</span><span>Learn</span><span>Explore</span><span>Build</span><span>Experience</span><span>Grow</span><span>Achieve</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="brand tall" style="--n:1" aria-label="Personal brand statement">
+  <div class="sticky">
+    <i class="fl f1" data-sp="1"></i><i class="fl f2" data-sp="-1.4"></i><i class="fl f3" data-sp="1.8"></i>
+    <p class="statement">Analyze. Defend. Secure.<br><span class="gr">Create Your Own Path.</span></p>
+  </div>
+</section>
+
+<section id="contact" class="contact" aria-labelledby="ct">
+  <div class="cbg" aria-hidden="true"><img src="assets/images/abhinav-hero.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <h2 id="ct" class="title">Let's <span class="gr">Connect</span></h2>
+    <p class="intro">Have an internship, collaboration, or security project in mind?</p>
+    <div class="links">
+      <a class="btn pri mag" id="c-mail" href="mailto:chitreyabhinav2006@gmail.com?subject=Hello%20Abhinav">✉️ Send Mail</a>
+      <a class="btn gl mag" id="c-wa" href="https://wa.me/919532623538" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      <a class="btn gl mag" id="c-in" href="https://www.linkedin.com/in/abhinav-chitrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a class="btn gl mag" id="c-gh" href="https://github.com/chitreyAbhinav" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+    <div class="contact-direct-row">
+      <a class="direct-link glass" href="mailto:chitreyabhinav2006@gmail.com?subject=Opportunity%20for%20Abhinav">
+        <span>✉️ chitreyabhinav2006@gmail.com</span>
+      </a>
+      <a class="direct-link glass" id="bottom-phone" href="tel:+919115758678">
+        <span id="bottom-phone-val">📞 +91 91157 58678 (Call)</span>
+      </a>
+      <a class="direct-link glass" id="bottom-wa" href="https://wa.me/919532623538" target="_blank" rel="noopener noreferrer">
+        <span id="bottom-wa-val">💬 +91 95326 23538 (WhatsApp)</span>
+      </a>
+      <span class="direct-link glass" style="opacity:.85;pointer-events:none;">
+        <span>📍 Mohali (College) • Prayagraj (Home)</span>
+      </span>
+      <button class="btn gl mag" id="copy" type="button" style="min-height:38px;padding:.4rem 1rem;font-size:.85rem;">Copy Email</button>
+    </div>
+  </div>
+</section>
+
+<section class="vibe" aria-label="How this site was made">
+  <p class="vtitle">Crafted for Impact</p>
+  <ol class="chain"><li class="glass">Technical Profile</li><li class="glass">Cyber Architecture</li><li class="glass">Interactive Experience</li><li class="glass">Continuous Evolution</li></ol>
+</section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 Abhinav Chitrey • Press <kbd style="padding:.2rem .4rem;border-radius:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-family:ui-monospace,monospace;font-size:.78rem;">Ctrl + K</kbd> for Command Palette</p>
+  <p>Engineered with curiosity, security &amp; ambition.</p>
+</footer>
+<button class="top glass" id="top" aria-label="Back to top">↑</button>
+
+<!-- ==================== INTERACTIVE MODALS ==================== -->
+
+<!-- 1. Recruiter Mode Bento Modal -->
+<div class="modal-overlay" id="modal-rm">
+  <div class="modal-box glass" style="max-width:820px;">
+    <button class="modal-close" onclick="closeModal('modal-rm')" type="button">✕</button>
+    <span class="p-badge py">30-Second Recruiter Briefing</span>
+    <h3 style="font-size:1.8rem;font-weight:700;margin:.6rem 0 .2rem;color:#fff;">Abhinav Chitrey</h3>
+    <p style="color:var(--mute);font-size:.95rem;">3rd Year B.E. Computer Science &amp; Engineering • Chandigarh University</p>
+
+    <div class="rm-bento">
+      <div class="rm-card">
+        <h4>Key Credential</h4>
+        <div class="rm-stat">87%</div>
+        <div class="rm-sub">IIT Madras Elite NPTEL • <b>Top 5% Topper</b> out of 20,949 candidates</div>
+      </div>
+      <div class="rm-card">
+        <h4>Target Roles</h4>
+        <div class="rm-stat" style="font-size:1.35rem;margin-top:.4rem;line-height:1.3;">Cybersecurity Intern<br>Python Developer</div>
+        <div class="rm-sub">Open for Summer 2027 Internships</div>
+      </div>
+      <div class="rm-card">
+        <h4>Codebase</h4>
+        <div class="rm-stat">6+</div>
+        <div class="rm-sub">Open-Source GitHub Repositories (Python, C++, JS, Flask)</div>
+      </div>
+      <div class="rm-card">
+        <h4>Primary Tech Stack</h4>
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem;">
+          <span class="p-tag">Python</span><span class="p-tag">Java</span><span class="p-tag">Ethical Hacking</span><span class="p-tag">Network Defense</span><span class="p-tag">Linux</span><span class="p-tag">Flask</span><span class="p-tag">Git</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;">
+      <a class="btn pri mag" href="mailto:chitreyabhinav2006@gmail.com?subject=Opportunity%20from%20Portfolio">✉️ Send Mail</a>
+      <a class="btn gl mag" id="rm-phone" href="tel:+919115758678">📞 +91 91157 58678</a>
+      <a class="btn gl mag" id="rm-wa" href="https://wa.me/919532623538" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      <a class="btn gl mag" href="https://www.linkedin.com/in/abhinav-chitrey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a class="btn gl mag" href="https://github.com/chitreyAbhinav" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <button class="btn gl mag cert-trigger" type="button">Verify IIT Madras Cert</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Interactive Cyber Terminal Modal -->
+<div class="modal-overlay" id="modal-term">
+  <div class="term-modal">
+    <div class="term-topbar">
+      <div class="term-dots"><span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span></div>
+      <span style="font-family:ui-monospace,monospace;font-size:.78rem;color:rgba(255,255,255,.6);">abhinav@security-station: ~</span>
+      <button class="modal-close" style="position:static;width:28px;height:28px;font-size:.9rem;" onclick="closeModal('modal-term')" type="button">✕</button>
+    </div>
+    <div class="term-screen" id="term-screen">
+      <div style="color:#38bdf8;">[!] Abhinav Chitrey Interactive Cyber Terminal v2.6.4</div>
+      <div style="color:rgba(255,255,255,.5);margin-bottom:.8rem;">Type 'help' to see all commands, or 'projects', 'skills', 'cert', 'hireme'.</div>
+    </div>
+    <div class="term-input-row">
+      <span style="color:#10b981;font-weight:700;">visitor@abhinav:~$</span>
+      <input class="term-input" id="term-cmd-input" type="text" autocomplete="off" autofocus placeholder="type a command...">
+    </div>
+  </div>
+</div>
+
+<!-- 3. Command Palette Modal (Ctrl+K) -->
+<div class="modal-overlay" id="modal-cmd">
+  <div class="cmd-modal">
+    <input class="cmd-search" id="cmd-input" type="text" placeholder="Type a command or jump to section...">
+    <ul class="cmd-list" id="cmd-list">
+      <li class="cmd-item" data-action="rm"><span>⚡ Open Recruiter Mode Briefing</span><span class="cmd-kbd">Recruiter</span></li>
+      <li class="cmd-item" data-action="term"><span>&gt;_ Open Interactive Cyber Terminal</span><span class="cmd-kbd">~</span></li>
+      <li class="cmd-item" data-action="cert"><span>🛡️ Verify IIT Madras Certificate (87%)</span><span class="cmd-kbd">Cert</span></li>
+      <li class="cmd-item" data-action="goto" data-target="projects"><span>📂 Jump to Projects &amp; Demos</span><span class="cmd-kbd">Projects</span></li>
+      <li class="cmd-item" data-action="goto" data-target="skills"><span>🎯 View 3D Skills Orbit</span><span class="cmd-kbd">Skills</span></li>
+      <li class="cmd-item" data-action="copy"><span>📋 Copy Email to Clipboard</span><span class="cmd-kbd">Email</span></li>
+      <li class="cmd-item" data-action="gh"><span>↗ Open GitHub Profile</span><span class="cmd-kbd">GitHub</span></li>
+      <li class="cmd-item" data-action="in"><span>↗ Open LinkedIn Profile</span><span class="cmd-kbd">LinkedIn</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 4. Certificate Modal -->
+<div class="modal-overlay" id="modal-cert">
+  <div class="modal-box glass cert-card" style="max-width:640px;">
+    <button class="modal-close" onclick="closeModal('modal-cert')" type="button">✕</button>
+    <span class="p-badge sec" style="background:rgba(59,130,246,.2);border-color:#3b82f6;color:#93c5fd;">Official NPTEL Credential</span>
+    <h3 style="font-size:1.8rem;font-weight:700;margin:.8rem 0 .2rem;color:#fff;">Cyber Security and Privacy</h3>
+    <p style="color:#a5f3fc;font-size:1.05rem;font-weight:500;">Indian Institute of Technology Madras (IITM)</p>
+    <p style="color:var(--mute);font-size:.85rem;margin-top:.2rem;">Funded by MoE, Govt. of India • SWAYAM • 12 Week Course</p>
+
+    <div class="cert-score">
+      <div>
+        <div class="cert-val">87%</div>
+        <div class="cert-lbl">Consolidated Score</div>
+      </div>
+      <div style="width:1px;background:rgba(255,255,255,.15);"></div>
+      <div>
+        <div class="cert-val" style="color:#10b981;">Top 5%</div>
+        <div class="cert-lbl">Topper Badge</div>
+      </div>
+      <div style="width:1px;background:rgba(255,255,255,.15);"></div>
+      <div>
+        <div class="cert-val" style="color:#fbbf24;">Elite</div>
+        <div class="cert-lbl">Certification Level</div>
+      </div>
+    </div>
+
+    <div style="background:rgba(0,0,0,.3);padding:1rem;border-radius:14px;font-family:ui-monospace,monospace;font-size:.8rem;color:var(--mute);text-align:left;line-height:1.7;">
+      <div>• <b>Recipient:</b> ABHINAV CHITREY</div>
+      <div>• <b>Proctored Exam:</b> 61.5 / 75</div>
+      <div>• <b>Online Assignments:</b> 24.91 / 25</div>
+      <div>• <b>Total Candidates:</b> 20,949</div>
+      <div>• <b>Roll Number:</b> NPTEL26CS144S1253101583</div>
+    </div>
+
+    <div style="margin-top:1.5rem;display:flex;justify-content:center;gap:.8rem;">
+      <a class="btn pri mag" href="https://www.linkedin.com/in/abhinav-chitrey/" target="_blank" rel="noopener noreferrer">View on LinkedIn ↗</a>
+      <button class="btn gl mag" onclick="closeModal('modal-cert')" type="button">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

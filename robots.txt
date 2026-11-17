@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /secret/
+
+# ==============================================================================
+# [!] RECONNAISSANCE SUCCESS: You found the Easter Egg!
+# FLAG{abhinav_ethical_hacker_2026_pentester}
+# If you are an engineering lead or recruiter inspecting robots.txt,
+# let's talk: chitreyabhinav2006@gmail.com | https://github.com/chitreyAbhinav
+# ==============================================================================
